@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KHUXReLux</title>
+<meta name="description" content="KHUXReLux: a non-commercial fan restoration of Kingdom Hearts Union χ[Cross] whose server runs inside the Android app, so the game plays on a tablet without a PC.">
+<meta name="theme-color" content="#0b4f8f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KHUXReLux">
+<meta property="og:description" content="Fan restoration of Kingdom Hearts Union χ[Cross]: the 4.3.1 client and a server inside the Android app. Colosseum, PvP and Union Cross included. Status, changelog, how to help.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="assets/icons/star.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&amp;family=Nunito:wght@400;600;800&amp;display=swap">
+<link rel="stylesheet" href="style.css?v=1">
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+<!--
+  KHUXReLux - project portal (static, for GitHub Pages). Layout and style follow the Re-Union X portal
+  (MIT, Copyright (c) 2026 Kxos and the Re-Union X contributors, see LICENSE-site.txt).
+  Facts that change live in data files, not in this page:
+    status.json     the status list (tab Status)
+    changelog.json  the changelog (tab Changelog), newest entry first
+  The game-related images (wallpaper, menu buttons, icons, two characters, the KH2 menu font) come from the game files and are (c) Disney / Square Enix, credited in the footer; the rest is CSS and hand-drawn SVG.
+-->
+<div class="notice-bar">Unofficial, non-profit fan project. Not affiliated with Square Enix or Disney. <a href="#home">Read the notice</a></div>
+
+<header class="hero-band">
+  <div class="hero-in">
+    <div class="brand">
+      <img class="logo" src="assets/icons/star.png" alt="" width="128" height="128">
+      <div class="titlebox">
+        <img class="crown" src="assets/icons/crown.png" alt="" width="122" height="98">
+        <h1>KHUX<span>Relux</span></h1>
+      </div>
+    </div>
+    <p class="sub">Union χ[Cross] is playable again and is <span class="multi">multilanguage</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-orange" href="#status">What works</a>
+      <a class="btn" href="#changelog">Latest changes</a>
+    </div>
+  </div>
+</header>
+<nav class="tabbar" aria-label="Sections">
+  <div class="tabs">
+    <a class="tabimg" href="#home" data-tab="home"><span class="pics"><img class="off" src="assets/tabs/but1_off.png" alt="" width="200" height="170"><img class="on" src="assets/tabs/but1_on.png" alt="" width="200" height="170"></span><span class="lab">Home</span></a>
+    <a class="tabimg" href="#status" data-tab="status"><span class="pics"><img class="off" src="assets/tabs/but2_off.png" alt="" width="200" height="170"><img class="on" src="assets/tabs/but2_on.png" alt="" width="200" height="170"></span><span class="lab">Status</span></a>
+    <a class="tabimg" href="#changelog" data-tab="changelog"><span class="pics"><img class="off" src="assets/tabs/but3_off.png" alt="" width="200" height="170"><img class="on" src="assets/tabs/but3_on.png" alt="" width="200" height="170"></span><span class="lab">Log</span></a>
+    <a class="tabimg" href="#server" data-tab="server"><span class="pics"><img class="off" src="assets/tabs/but4_off.png" alt="" width="200" height="170"><img class="on" src="assets/tabs/but4_on.png" alt="" width="200" height="170"></span><span class="lab">Server</span></a>
+    <a class="tabimg" href="#credits" data-tab="credits"><span class="pics"><img class="off" src="assets/tabs/but5_off.png" alt="" width="200" height="170"><img class="on" src="assets/tabs/but5_on.png" alt="" width="200" height="170"></span><span class="lab">Credits</span></a>
+  </div>
+</nav>
+
+<main>
+
+<!-- 1. HOME -->
+<section class="frame" id="sec-home" data-section="home">
+  <h2 class="ttl"><img class="ttl-ic" src="assets/icons/home.png" alt="" width="52" height="52"><span class="plate"><img class="plate-bg" src="assets/frames/plate.png" alt="" width="764" height="163"><img class="plate-word" src="assets/titles/home.png" alt="Home"></span></h2>
+  <div class="inner">
+    <div class="intro">
+      <div>
+        <p class="eyebrow">A fan restoration</p>
+        <h3>The world of Union χ, back on a screen.</h3>
+        <p>Kingdom Hearts Union χ[Cross] closed its servers in <b class="k">May 2021</b>. KHUXReLux brings the last version back with a <b class="k">server inside the Android app</b>, so the game runs on the tablet itself: no PC needed to play.</p>
+      </div>
+      <div class="tiles">
+        <div class="tile"><b>73</b><span>Colosseum PvE seasons</span></div>
+        <div class="tile"><b>1060</b><span>Union Cross stages</span></div>
+        <div class="tile"><b>78</b><span>VIP challenge events</span></div>
+        <div class="tile"><b>4.3.1</b><span>last worldwide client</span></div>
+      </div>
+    </div>
+
+    <div class="flow">
+      <div class="step"><i class="ic ic-play"></i><b>The game</b><span>The 4.3.1 client, lightly patched to talk to a server on the same device.</span></div>
+      <span class="swap" aria-hidden="true">&#8644;</span>
+      <div class="step"><i class="ic ic-status"></i><b>A server in the app</b><span>Written from scratch in Node.js. It answers the game and keeps your save.</span></div>
+      <span class="swap" aria-hidden="true">&#8644;</span>
+      <div class="step"><i class="ic ic-credits"></i><b>Community data</b><span>Original tables where they survive, rebuilt from public references where they do not.</span></div>
+    </div>
+
+    <h3 class="sq">Where we are</h3>
+    <div class="cards4">
+      <div class="mini ok"><span class="tag t-update">WORKS</span><b>Story and Shop</b><span>Quests, Gacha banners 2016-2021, Moogle Shop, missions, Spirit</span></div>
+      <div class="mini ok"><span class="tag t-update">WORKS</span><b>Colosseum</b><span>All <b class="k">73</b> PvE seasons, and a new <b class="k">PvP</b> with weekly seasons</span></div>
+      <div class="mini ok"><span class="tag t-update">WORKS</span><b>Events</b><span><b class="k">78</b> VIP challenge events in the Events tab</span></div>
+      <div class="mini prog"><span class="tag t-event">IN PROGRESS</span><b>Union Cross</b><span><b class="k">1060</b> of 1106 stages, solo play</span></div>
+    </div>
+    <div class="miss"><span class="tag t-important">MISSING</span><b>Still to come</b><span>Raids in full (the weekly raids and the catalog) and anything that needed other real players</span></div>
+
+    <div class="callout warn"><b>Please read.</b> KHUXReLux is a non-commercial fan restoration. It is not affiliated with, endorsed or sponsored by Square Enix or Disney. This site hosts no game files and no downloads, and the game's names, art and music belong to their owners. The images from the game on this site (background, menu buttons, icons, titles, frames and characters) are official game art, shown only to document the project.</div>
+    <p class="note">Honest status: this is a <b class="k">work in progress</b>. Some quests, events and screens are rebuilt from references, and you should expect bugs and crashes.</p>
+    <h3 class="sq" id="play-block">How to play</h3>
+    <div class="card">
+      <p class="lead">KHUXReLux needs game data that is not ours to hand out, so there is <b class="k">no public installer</b> and this site hosts <b class="k">no game files</b>.</p>
+      <p>This is a <b class="k">work in progress</b>: expect bugs, crashes and screens that are not there yet.</p>
+    </div>
+    <h3 class="sq">What a setup needs</h3>
+    <ul class="rows checks">
+      <li><span class="x">An Android device with an <b class="k">arm64</b> processor and about <b class="k">25 GB</b> free (the high-resolution data alone is about 8 GB)</span></li>
+      <li><span class="x">The KHUXReLux app and a data package from the project</span></li>
+      <li><span class="x">Nothing else: the server and your save live on the device</span></li>
+    </ul>
+    <h3 class="sq">Questions</h3>
+    <details class="more"><summary>Do I need a PC?</summary><p class="pnote">Not to play. The PC is only used by the project to prepare the data packages.</p></details>
+    <details class="more"><summary>Is it online?</summary><p class="pnote">No. The server runs inside the app and your save stays on the device. There are no other players: Union Cross, parties and rankings are local.</p></details>
+    <details class="more"><summary>Can I download it?</summary><p class="pnote">Not yet, and not from this page. Follow the <a href="#changelog">changelog</a> and the <a href="#status">status</a> to see how it moves.</p></details>
+    <details class="more"><summary>Found a bug?</summary><p class="pnote">Tell us on the KHUXReLux Discord server (see the <a href="#server">Server</a> page): what you did step by step, what happened instead, the screen or quest number, and a screenshot or video if you can.</p></details>
+
+    <h3 class="sq" id="help-block">How you can help</h3>
+    <div class="card">
+      <p class="lead">What helps most is <b class="k">knowledge</b>: how screens, events and modes looked and worked. A few Union Cross events and Colosseum months had to be rebuilt without their maps. We ask only for information, never for game files.</p>
+    </div>
+    <h3 class="sq">What we are looking for</h3>
+    <ul class="rows arrows">
+      <li><span class="tag t-important">MOST WANTED</span><span class="x">The <b class="k">maps and bosses</b> of eight Union Cross events from 2019-2020: Faline Snuggly, Baymax Snuggly, Rapunzel Spirit Parts, Boo Snuggly, Cream Soda, Union Cross 2 (Oct 2019), New Year's Chirithy Hat and Union Cross 14 (Sep-Oct 2020). Screenshots or videos of the stages are enough</span></li>
+      <li><span class="tag t-event">EVENTS</span><span class="x">Round-by-round lineups of the <b class="k">16 Colosseum months</b> that were recreated from the wiki, to check the enemies, the waves and their order</span></li>
+      <li><span class="tag t-info">KNOWLEDGE</span><span class="x">How <b class="k">PvP</b> worked: points per match, how classes were decided, what the rewards were, how matches felt. Our rules there are our own design</span></li>
+      <li><span class="tag t-campaign">ANYTHING</span><span class="x">Your own screenshots and videos of any screen of the game, any year</span></li>
+    </ul>
+    <div class="card">
+      <p>Please do not send or post game files (APK, OBB, downloaded data, backups): we cannot accept them.</p>
+    </div>
+    <p>To get in touch, see the <a href="#server">Server</a> page.</p>
+  </div>
+</section>
+
+<!-- 2. STATUS (data: status.json) -->
+<section class="frame" id="sec-status" data-section="status">
+  <h2 class="ttl"><img class="ttl-ic" src="assets/icons/status.png" alt="" width="52" height="52"><span class="plate"><img class="plate-bg" src="assets/frames/plate.png" alt="" width="764" height="163"><img class="plate-word" src="assets/titles/status.png" alt="Status"></span></h2>
+  <div class="inner">
+    <div class="meter" id="meter"><span class="ml">Areas working</span><span class="mb"><span class="mf" id="meter-fill"></span></span><span class="mv" id="meter-val">-</span></div>
+    <p class="note" id="status-summary">Loading the status list...</p>
+    <div id="status-list"></div>
+    <noscript><p class="note">The status list needs JavaScript.</p></noscript>
+    <div class="legend">
+      <span class="chip original">ORIGINAL</span> the data comes from the game itself &middot;
+      <span class="chip rebuilt">REBUILT</span> recreated from references such as the wiki, so it can differ from the original &middot;
+      <span class="chip own">OWN DESIGN</span> the original rules are not known, so the rules are ours.
+    </div>
+  </div>
+</section>
+
+<!-- 3. CHANGELOG (data: changelog.json) -->
+<section class="frame" id="sec-changelog" data-section="changelog">
+  <h2 class="ttl"><img class="ttl-ic" src="assets/icons/log.png" alt="" width="52" height="52"><span class="plate"><img class="plate-bg" src="assets/frames/plate.png" alt="" width="764" height="163"><img class="plate-word" src="assets/titles/log.png" alt="Log"></span></h2>
+  <div class="inner">
+    <p class="note">Every server revision with what changed, newest first. Dates are 2026.</p>
+    <div id="changelog-list"><p class="note">Loading the changelog...</p></div>
+  </div>
+</section>
+
+<!-- 4. HOW YOU CAN HELP -->
+
+
+<!-- 5. HOW TO PLAY + FAQ -->
+
+
+
+
+<!-- SERVER: where to find us -->
+<section class="frame" id="sec-server" data-section="server">
+  <h2 class="ttl"><img class="ttl-ic" src="assets/icons/server.png" alt="" width="52" height="52"><span class="plate"><img class="plate-bg" src="assets/frames/plate.png" alt="" width="764" height="163"><img class="plate-word" src="assets/titles/server.png" alt="Server"></span></h2>
+  <div class="inner">
+    <div class="card">
+      <p class="lead">The <b class="k">KHUXReLux Discord server</b> is where the project lives: news as they happen, questions, bug reports and the people who test it.</p>
+    </div>
+    <h3 class="sq">Get in touch</h3>
+    <p>Join us to follow the work, ask how something works, report a bug or share what you remember of the game.</p>
+    <div class="btns">
+      <a class="btn btn-orange" href="https://discord.com/channels/1525747384984801300/" target="_blank" rel="noopener">KHUXReLux Discord</a>
+    </div>
+    <h3 class="sq">Our neighbours</h3>
+    <p>KHUXReLux shares research with Re-Union X, a sibling restoration with its own server and community.</p>
+    <div class="btns">
+      <a class="btn" href="https://discord.gg/SYhvnke4yY" target="_blank" rel="noopener">Re-Union X Discord</a>
+      <a class="btn" href="https://github.com/Kxos/Re-Union-X" target="_blank" rel="noopener">Re-Union X on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. CREDITS -->
+<section class="frame" id="sec-credits" data-section="credits">
+  <h2 class="ttl"><img class="ttl-ic wide" src="assets/icons/credits.png" alt="" width="65" height="52"><span class="plate"><img class="plate-bg" src="assets/frames/plate.png" alt="" width="764" height="163"><img class="plate-word" src="assets/titles/credits.png" alt="Credits"></span></h2>
+  <div class="inner">
+    <p>This restoration stands on the work of people who preserved and documented the game long before us.</p>
+    <ul class="rows credits">
+      <li><span class="tag t-info">Kxos</span><span class="x"><a href="https://github.com/Kxos/Re-Union-X">Re-Union X</a>, a sibling restoration with its own server. Its code is MIT licensed, its notes are a constant reference and the two projects share research, notably on the Colosseum and Union Cross. The look and structure of this page follow the Re-Union X portal.</span></li>
+      <li><span class="tag t-info">thethiny</span><span class="x"><a href="https://github.com/thethiny/KHUxTools">KHUxTools</a> and the other open tools for reading the game's files, which everything else here stands on.</span></li>
+      <li><span class="tag t-info">Roboloid</span><span class="x">The medal voice files, collected on the <a href="https://roboloid.github.io/khux/">Roboloid KHUχ site</a>.</span></li>
+      <li><span class="tag t-info">KHUX Wiki</span><span class="x"><a href="https://www.khuxwiki.com/">khuxwiki.com</a>: enemy lineups, event calendars and board data. It is how the Colosseum seasons and Union Cross stages with no surviving maps were rebuilt.</span></li>
+      <li><span class="tag t-campaign">Community</span><span class="x">Everyone who still remembers the quests, the events and the numbers and who shared them: screenshots, videos and corrections are what close the gaps.</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="legal">
+  <img class="foot-l" src="assets/footer/chirishi.png" alt="" width="128" height="180">
+  <div class="legal-text">
+    <p><b>KHUXReLux</b> is a non-commercial fan restoration of Kingdom Hearts Union χ[Cross]. It is not affiliated with, endorsed or sponsored by Square Enix or Disney. No game files or APKs are distributed or linked here. The background, the menu buttons, the icons, the titles, the frames and the two characters at the bottom are official game art &copy; Disney / Square Enix, shown to document the project. Kingdom Hearts, Kingdom Hearts Union χ and all related names and trademarks belong to their respective owners.</p>
+    <p>KHUXReLux is a separate project from Re-Union X, though the two share research.</p>
+  </div>
+  <img class="foot-r" src="assets/footer/avatar.png" alt="" width="158" height="230">
+</footer>
+
+
+<script src="app.js?v=1"></script>
+</body>
+</html>

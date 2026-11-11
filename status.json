@@ -1,0 +1,134 @@
+{
+  "updated": "2026-11-11",
+  "revision": 230,
+  "summary": "The game is playable from the tutorial onward, with the shop, events, Union Cross, the Colosseum and PvP. The gaps are mostly in raids and in anything that needed other real players.",
+  "areas": [
+    {
+      "name": "Tutorial and first launch",
+      "state": "done",
+      "detail": "A brand-new account plays the whole tutorial, picks High or Low resolution and downloads its data. Re-entering the game halfway through the tutorial works.",
+      "tags": [
+        "ORIGINAL"
+      ]
+    },
+    {
+      "name": "Story quests",
+      "state": "done",
+      "detail": "Quests play with their maps and cutscenes, and the shop, events and boards open as you move through the story.",
+      "tags": [
+        "ORIGINAL"
+      ]
+    },
+    {
+      "name": "Medals, Gacha and Shop",
+      "state": "done",
+      "detail": "Gacha banners from 2016 to 2021, VIP deals, one free deal a day per banner, Special Attack Bonus, the Moogle Shop and the Present Box. 37 seven-star medals that had no source now drop from banners close to their release.",
+      "tags": [
+        "ORIGINAL",
+        "REBUILT"
+      ]
+    },
+    {
+      "name": "Medal voices",
+      "state": "done",
+      "detail": "Voices play on the medal card and in Gacha results. They do not play inside battles.",
+      "done": 107,
+      "total": 107,
+      "unit": "voices",
+      "tags": [
+        "ORIGINAL"
+      ]
+    },
+    {
+      "name": "Avatar, titles and boards",
+      "state": "done",
+      "detail": "Avatar parts and the six outfits, level and achievement titles, and the Avatar, Union and Coliseum boards with their images.",
+      "tags": [
+        "ORIGINAL",
+        "REBUILT"
+      ]
+    },
+    {
+      "name": "Missions",
+      "state": "done",
+      "detail": "Beginner, Daily and Weekly missions count your quests, raid bosses, draws and PvP matches.",
+      "tags": [
+        "ORIGINAL"
+      ]
+    },
+    {
+      "name": "Special and Events",
+      "state": "done",
+      "detail": "The Special tab and the event list, including 78 VIP challenge events. Some series that survived only in the wiki were rebuilt.",
+      "tags": [
+        "ORIGINAL",
+        "REBUILT"
+      ]
+    },
+    {
+      "name": "Spirit Training",
+      "state": "done",
+      "detail": "The Spirit and its parts, with all four training slots always open.",
+      "tags": [
+        "ORIGINAL"
+      ]
+    },
+    {
+      "name": "Resolution packs",
+      "state": "done",
+      "detail": "High (about 8 GB) and Low data. You can switch from Restore Resources on the title screen.",
+      "tags": [
+        "ORIGINAL"
+      ]
+    },
+    {
+      "name": "Colosseum (PvE)",
+      "state": "done",
+      "detail": "All 73 monthly seasons are playable, one comes up each time you open the app and your progress is kept per season. 16 seasons had no surviving maps and were recreated from the wiki enemy lists.",
+      "done": 73,
+      "total": 73,
+      "unit": "seasons",
+      "tags": [
+        "ORIGINAL",
+        "REBUILT"
+      ]
+    },
+    {
+      "name": "Colosseum PvP",
+      "state": "done",
+      "detail": "Weekly seasons that change on Monday morning and rotate through the real season table, using only seasons whose Keyblades you already own. Class and rewards follow your wins, and the weekly reward arrives in the Present Box. Opponents are generated: random avatars from the parts you own and random medals from the current Gacha pulls, stronger as your class grows.",
+      "tags": [
+        "ORIGINAL",
+        "OWN DESIGN"
+      ]
+    },
+    {
+      "name": "Union Cross",
+      "state": "progress",
+      "detail": "Events up to 2021 with their maps, in solo play. 14 stages of eight 2019-2020 events were rebuilt from known rooms, so they are not the original maps. 46 stages are still out because no map has been found.",
+      "done": 1060,
+      "total": 1106,
+      "unit": "stages",
+      "tags": [
+        "ORIGINAL",
+        "REBUILT"
+      ]
+    },
+    {
+      "name": "Raid bosses",
+      "state": "progress",
+      "detail": "Bosses appear at the end of story quests and their weak points take damage. The Raid Time quests, the weekly raids and the full raid catalog are not in yet.",
+      "tags": [
+        "ORIGINAL"
+      ]
+    },
+    {
+      "name": "Other players",
+      "state": "missing",
+      "detail": "There is no online play. Friends, parties and chat are local, Union Cross runs against stand-ins and the rankings only hold you.",
+      "tags": [
+        "OWN DESIGN"
+      ]
+    }
+  ]
+}
