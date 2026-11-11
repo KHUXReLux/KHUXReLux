@@ -363,3 +363,12 @@ details.more { overflow: visible; }
   .eh .ed { order: 2; margin-left: auto; }
   .eh .en { order: 3; flex: 1 1 100%; }
 }
+
+/* hero buttons: the game's own word-art (STATUS, INFORMATION) used as buttons */
+.hero-cta { gap: 1.1rem; align-items: center; }
+.wbtn { display: inline-block; line-height: 0; text-decoration: none; transition: transform 0.12s, filter 0.12s; filter: drop-shadow(0 3px 5px rgba(10, 6, 60, 0.6)); }
+.wbtn img { display: block; width: auto; }
+.wbtn-status img { height: clamp(38px, 10.4vw, 58px); }
+.wbtn-log img { height: clamp(26px, 6.8vw, 44px); }
+.wbtn:hover, .wbtn:focus-visible { transform: translateY(-2px) scale(1.04); filter: drop-shadow(0 3px 5px rgba(10, 6, 60, 0.6)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.55)); }
+.wbtn:active { transform: translateY(1px); }
